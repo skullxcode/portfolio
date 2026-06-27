@@ -1,5 +1,5 @@
 import React from 'react';
-import heroImage from '../../assets/hero.png';
+import heroImage from '../../assets/hero.webp';
 
 const Hero = () => {
   return (
@@ -37,6 +37,8 @@ const Hero = () => {
             className="w-full h-full object-cover grayscale opacity-90 mix-blend-multiply"
             alt="skullx avatar"
             src={heroImage}
+            fetchPriority="high"
+            loading="eager"
           />
         </div>
       </div>

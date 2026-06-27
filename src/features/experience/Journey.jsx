@@ -63,6 +63,7 @@ const Journey = () => {
               className="w-full min-w-[700px] max-w-[900px] object-contain opacity-90 hover:opacity-100 transition-opacity dark:invert dark:brightness-110"
               src={githubActivityGraphUrl}
               alt="Activity Graph stats"
+              loading="lazy"
             />
           </div>
         </div>

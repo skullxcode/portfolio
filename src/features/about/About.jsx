@@ -1,5 +1,5 @@
 import React from 'react';
-import aboutImage from '../../assets/about.png';
+import aboutImage from '../../assets/about.webp';
 
 const About = () => {
   return (
@@ -46,6 +46,7 @@ const About = () => {
             className="w-full h-full object-cover grayscale opacity-90 mix-blend-multiply"
             alt="skullx about portrait"
             src={aboutImage}
+            loading="lazy"
           />
         </div>
 

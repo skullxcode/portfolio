@@ -9,6 +9,7 @@ const StatWidget = ({ title, icon, contentUrl, containerClass = "" }) => (
       className="max-w-full"
       src={contentUrl}
       alt={`${title} stats`}
+      loading="lazy"
     />
   </div>
 );

@@ -8,6 +8,7 @@ const InsightCard = ({ tag, readTime, title, imageSrc }) => {
           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
           alt={title} 
           src={imageSrc}
+          loading="lazy"
         />
       </div>
       <div className="flex items-center gap-3 mb-2">
