@@ -1,0 +1,80 @@
+@import "tailwindcss";
+@config "../tailwind.config.js";
+@plugin "@tailwindcss/forms";
+@plugin "@tailwindcss/container-queries";
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --tertiary-fixed-dim: #c6c6c7;
+  --surface: #f9f9f9;
+  --on-primary-fixed-variant: #474747;
+  --on-secondary: #ffffff;
+  --on-tertiary-fixed: #1a1c1c;
+  --inverse-on-surface: #f1f1f1;
+  --on-secondary-container: #626262;
+  --on-error: #ffffff;
+  --surface-container-high: #e8e8e8;
+  --on-primary-container: #848484;
+  --surface-container-low: #f4f3f3;
+  --on-tertiary-container: #838484;
+  --surface-container-lowest: #ffffff;
+  --outline-variant: #cfc4c5;
+  --on-tertiary: #ffffff;
+  --primary-container: #1b1b1b;
+  --tertiary-container: #1a1c1c;
+  --on-secondary-fixed: #1b1c1c;
+  --primary-fixed: #e2e2e2;
+  --tertiary-fixed: #e2e2e2;
+  --inverse-surface: #2f3131;
+  --on-error-container: #93000a;
+  --secondary-container: #e1dfdf;
+  --on-surface-variant: #4c4546;
+  --on-primary: #ffffff;
+  --surface-container: #eeeeee;
+  --secondary-fixed-dim: #c7c6c6;
+  --surface-variant: #e2e2e2;
+  --background: #f9f9f9;
+  --secondary: #5e5e5e;
+  --on-primary-fixed: #1b1b1b;
+  --on-background: #1a1c1c;
+  --inverse-primary: #c6c6c6;
+  --primary: #000000;
+  --on-surface: #1a1c1c;
+  --primary-fixed-dim: #c6c6c6;
+  --tertiary: #000000;
+  --secondary-fixed: #e4e2e2;
+  --surface-tint: #5e5e5e;
+  --surface-container-highest: #e2e2e2;
+  --on-tertiary-fixed-variant: #454747;
+  --surface-dim: #dadada;
+  --surface-bright: #f9f9f9;
+  --error-container: #ffdad6;
+  --outline: #7e7576;
+  --error: #ba1a1a;
+  --on-secondary-fixed-variant: #464747;
+}
+
+.dark {
+  --surface: #121212;
+  --on-surface: #e8e8e8;
+  --primary: #ffffff;
+  --on-primary: #000000;
+  --background: #121212;
+  --on-background: #e8e8e8;
+  --surface-container: #1e1e1e;
+  --surface-container-high: #2c2c2c;
+  --on-surface-variant: #b3b3b3;
+  --outline-variant: #3f3f3f;
+  --primary-container: #e2e2e2;
+  --on-primary-container: #1b1b1b;
+}
+
+@layer base {
+  body {
+    background-color: var(--background);
+    color: var(--on-background);
+  }
+}
